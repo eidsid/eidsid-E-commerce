@@ -1,0 +1,559 @@
+{
+    "header": {
+      "topHeader": {
+        "text": "تخفيضات الصيف على جميع ملابس السباحة مع توصيل سريع مجاني - خصم 50%!",
+        "href": "تسوق الآن"
+      },
+      "links": [
+        {
+          "href": "",
+          "text": "الرئيسية"
+        },
+        {
+          "href": "contact",
+          "text": "اتصل بنا"
+        },
+        {
+          "href": "about",
+          "text": "حول"
+        },
+        {
+          "href": "sign-up",
+          "text": "سجّل الآن"
+        }
+      ],
+      "searchPlaceholder": "ما الذي تبحث عنه؟"
+    },
+    "pages": {
+      "aboutUs": {
+        "section1": {
+          "title": "قصتنا",
+          "text1": "أطلقت في عام 2015، تُعد إكسكلوزف وجهة التسوق عبر الإنترنت الرئيسية في جنوب آسيا بوجود نشط في بنغلاديش. بدعم من مجموعة واسعة من الحلول التسويقية والبيانات والخدمات المخصصة، تضم إكسكلوزف 10,500 بائعًا و 300 علامة تجارية وتخدم 3 ملايين عميل عبر المنطقة.",
+          "text2": "تضم إكسكلوزف أكثر من مليون منتج، وهي تنمو بسرعة كبيرة. تُقدم إكسكلوزف مجموعة متنوعة في فئات تتراوح من المستهلك."
+        },
+        "section2": {
+          "aboutCards": [
+            {
+              "title": "10.5k",
+              "subtitle": "البائعون النشطون على موقعنا"
+            },
+            {
+              "title": "33k",
+              "subtitle": "مبيعات المنتجات الشهرية"
+            },
+            {
+              "title": "45.5k",
+              "subtitle": "العملاء النشطون على موقعنا"
+            },
+            {
+              "title": "25k",
+              "subtitle": "إجمالي المبيعات السنوية على موقعنا"
+            }
+          ]
+        },
+        "section3": {
+          "employeeCards": [
+            {
+              "href": {
+                "instagram": "#",
+                "linkedin": "#",
+                "twitter": "#"
+              },
+              "image": "employee-1.webp",
+              "name": "توم كروز",
+              "status": "مؤسس ورئيس"
+            },
+            {
+              "href": {
+                "instagram": "#",
+                "linkedin": "#",
+                "twitter": "#"
+              },
+              "image": "employee-2.webp",
+              "name": "إيما واتسون",
+              "status": "المدير التنفيذي"
+            },
+            {
+              "href": {
+                "instagram": "#",
+                "linkedin": "#",
+                "twitter": "#"
+              },
+              "image": "employee-3.webp",
+              "name": "ويل سميث",
+              "status": "مصمم المنتج"
+            }
+          ]
+        },
+        "section4": {
+          "services": [
+            {
+              "title": "توصيل سريع ومجاني",
+              "subtitle": "توصيل مجاني لجميع الطلبات التي تزيد قيمتها عن 140 دولارًا",
+              "image": "delivery.svg"
+            },
+            {
+              "title": "خدمة عملاء على مدار الساعة",
+              "subtitle": "دعم ودية على مدار الساعة طوال أيام الأسبوع",
+              "image": "support.svg"
+            },
+            {
+              "title": "ضمان استرداد الأموال",
+              "subtitle": "نقوم بإرجاع الأموال في غضون 30 يومًا",
+              "image": "safety.svg"
+            }
+          ]
+        }
+      },
+      "account": {
+        "yourProfile": "ملفك الشخصي",
+        "name": "الاسم",
+        "password": "كلمة المرور",
+        "city": "المدينة",
+        "streetAddress": "عنوان الشارع",
+        "apartment": "الشقة",
+        "companyName": "اسم الشركة",
+        "email": "البريد الإلكتروني",
+        "phoneNumber": "رقم الهاتف"
+      },
+      "cart": {
+        "checkOut": {
+          "form": {
+            "title": "تفاصيل الفاتورة",
+            "firstName": "الاسم الأول",
+            "companyName": "اسم الشركة",
+            "streetAddress": "عنوان الشارع",
+            "apartment": "الشقة، الطابق، إلخ.",
+            "phoneNumber": "رقم الهاتف",
+            "city": "المدينة",
+            "email": "عنوان البريد الإلكتروني",
+            "checkbox": "حفظ هذه المعلومات للتسجيل السريع في المرة القادمة"
+          },
+          "priceSection": {
+            "subtotal": "المجموع الفرعي",
+            "shipping": "الشحن",
+            "total": "الإجمالي",
+            "payment": {
+              "bank": "بنك",
+              "cash": "الدفع عند التسليم"
+            },
+            "coupon": {
+              "placeholder": "كود القسيمة",
+              "apply": "تطبيق القسيمة"
+            },
+            "order": "طلب"
+          }
+        },
+        "topLevelTexts": {
+          "product": "المنتج",
+          "price": "السعر",
+          "quantity": "الكمية",
+          "subtotal": "المجموع الفرعي"
+        },
+        "buttons": {
+          "return": "العودة للتسوق",
+          "update": "تحديث السلة",
+          "apply": "تطبيق القسيمة",
+          "process": "الانتقال لإتمام الشراء",
+          "applyPlaceholder": "كود القسيمة"
+        },
+        "cartTotal": {
+          "title": "إجمالي السلة",
+          "subtotal": "المجموع الفرعي",
+          "shipping": "الشحن",
+          "total": "الإجمالي"
+        }
+      },
+      "contact": {
+        "infoSection": {
+          "callPart": {
+            "call": "اتصل بنا",
+            "text": "نحن متاحون على مدار الساعة طوال أيام الأسبوع",
+            "phone": "الهاتف: +8801611112222"
+          },
+          "writePart": {
+            "write": "راسلنا",
+            "text": "املأ النموذج الخاص بنا وسنتواصل معك في غضون 24 ساعة.",
+            "emails": [
+              "البريد الإلكتروني: customer@exclusive.com",
+              "البريد الإلكتروني: support@exclusive.com"
+            ]
+          }
+        },
+        "form": {
+          "name": "اسمك*",
+          "email": "بريدك الإلكتروني*",
+          "phone": "رقم هاتفك*",
+          "message": "أدخل رسالتك",
+          "send": "إرسال الرسالة"
+        }
+      },
+      "registration": {
+        "login": {
+          "title": "تسجيل الدخول إلى إكسكلوزف",
+          "subtitle": "أدخل تفاصيلك أدناه",
+          "emailOrPhone": "البريد الإلكتروني أو رقم الهاتف",
+          "password": "كلمة المرور",
+          "login": "تسجيل الدخول",
+          "forgetPassword": "نسيت كلمة المرور"
+        },
+        "signUp": {
+          "title": "إنشاء حساب",
+          "subtitle": "أدخل تفاصيلك أدناه",
+          "inputs": {
+            "name": "الاسم",
+            "email": "البريد الإلكتروني",
+            "phoneNumber": "رقم الهاتف",
+            "password": "كلمة المرور"
+          },
+          "createAcc": "إنشاء حساب",
+          "signGoogle": "التسجيل بواسطة جوجل",
+          "haveAccount": "هل لديك حساب بالفعل؟",
+          "login": "تسجيل الدخول"
+        }
+      },
+      "wishlist": {
+        "wishlist": "قائمة الأماني",
+        "moveAllBag": "نقل الكل إلى السلة",
+        "forYou": "من أجلك",
+        "seeAll": "عرض الكل"
+      },
+      "index": {
+        "sideMenu": {
+          "plainMenu": [
+            {
+              "href": "electronics",
+              "name": "الإلكترونيات"
+            },
+            {
+              "href": "home-lifestyle",
+              "name": "المنزل وأسلوب الحياة"
+            },
+            {
+              "href": "medicine",
+              "name": "الطب"
+            },
+            {
+              "href": "sport-outdoor",
+              "name": "الرياضة والخارج"
+            },
+            {
+              "href": "baby-toys",
+              "name": "ملابس الأطفال والألعاب"
+            },
+            {
+              "href": "groceries-pets",
+              "name": "البقالة والحيوانات الأليفة"
+            },
+            {
+              "href": "health-beauty",
+              "name": "الصحة والجمال"
+            }
+          ],
+          "otherMenu": [
+            {
+              "menuItems": [
+                {
+                  "href": "dress",
+                  "name": "فستان"
+                },
+                {
+                  "href": "skirt",
+                  "name": "تنورة"
+                },
+                {
+                  "href": "blouse",
+                  "name": "بلوزة"
+                },
+                {
+                  "href": "pants",
+                  "name": "بنطلون"
+                },
+                {
+                  "href": "jacket",
+                  "name": "جاكيت"
+                },
+                {
+                  "href": "coat",
+                  "name": "معطف"
+                },
+                {
+                  "href": "sweater",
+                  "name": "سترة"
+                },
+                {
+                  "href": "top",
+                  "name": "قمة"
+                },
+                {
+                  "href": "jeans",
+                  "name": "جينز"
+                },
+                {
+                  "href": "shorts",
+                  "name": "شورت"
+                },
+                {
+                  "href": "scarf",
+                  "name": "وشاح"
+                },
+                {
+                  "href": "sunglasses",
+                  "name": "نظارات شمسية"
+                },
+                {
+                  "href": "hat",
+                  "name": "قبعة"
+                },
+                {
+                  "href": "heels",
+                  "name": "كعب عالي"
+                },
+                {
+                  "href": "flats",
+                  "name": "شقة"
+                },
+                {
+                  "href": "boots",
+                  "name": "أحذية بنات"
+                },
+                {
+                  "href": "sandals",
+                  "name": "صنادل"
+                },
+                {
+                  "href": "handbag",
+                  "name": "حقيبة يد"
+                },
+                {
+                  "href": "clutch",
+                  "name": "حقيبة صغيرة"
+                },
+                {
+                  "href": "necklace",
+                  "name": "عقد"
+                }
+              ],
+              "menuName": "أزياء النساء"
+            },
+            {
+              "menuItems": [
+                {
+                  "href": "shirt",
+                  "name": "قميص"
+                },
+                {
+                  "href": "t-shirt",
+                  "name": "قميص تي"
+                },
+                {
+                  "href": "polo",
+                  "name": "قميص بولو"
+                },
+                {
+                  "href": "sweater",
+                  "name": "سترة"
+                },
+                {
+                  "href": "hoodie",
+                  "name": "هودي"
+                },
+                {
+                  "href": "jacket",
+                  "name": "جاكيت"
+                },
+                {
+                  "href": "coat",
+                  "name": "معطف"
+                },
+                {
+                  "href": "blazer",
+                  "name": "بليزر"
+                },
+                {
+                  "href": "pants",
+                  "name": "بنطلون"
+                },
+                {
+                  "href": "jeans",
+                  "name": "جينز"
+                },
+                {
+                  "href": "shorts",
+                  "name": "شورت"
+                },
+                {
+                  "href": "sweatpants",
+                  "name": "سروال رياضي"
+                },
+                {
+                  "href": "swimwear",
+                  "name": "ملابس سباحة"
+                },
+                {
+                  "href": "tie",
+                  "name": "ربطة عنق"
+                },
+                {
+                  "href": "bowtie",
+                  "name": "ربطة العنق"
+                },
+                {
+                  "href": "socks",
+                  "name": "جوارب"
+                },
+                {
+                  "href": "underwear",
+                  "name": "ملابس داخلية"
+                },
+                {
+                  "href": "shoes",
+                  "name": "أحذية"
+                },
+                {
+                  "href": "sneakers",
+                  "name": "حذاء رياضي"
+                },
+                {
+                  "href": "loafers",
+                  "name": "شبشب"
+                },
+                {
+                  "href": "boots",
+                  "name": "أحذية"
+                },
+                {
+                  "href": "sandals",
+                  "name": "صنادل"
+                },
+                {
+                  "href": "watch",
+                  "name": "ساعة يد"
+                },
+                {
+                  "href": "bracelet",
+                  "name": "سوار"
+                },
+                {
+                  "href": "belt",
+                  "name": "حزام"
+                },
+                {
+                  "href": "hat",
+                  "name": "قبعة"
+                },
+                {
+                  "href": "cap",
+                  "name": "قبعة بيسبول"
+                },
+                {
+                  "href": "bag",
+                  "name": "حقيبة"
+                },
+                {
+                  "href": "backpack",
+                  "name": "حقيبة ظهر"
+                },
+                {
+                  "href": "suit",
+                  "name": "بدلة"
+                },
+                {
+                  "href": "blazer",
+                  "name": "بليزر"
+                },
+                {
+                  "href": "vest",
+                  "name": "سترة بدون أكمام"
+                }
+              ],
+              "menuName": "أزياء الرجال"
+            }
+          ]
+        },
+        "slider": {
+          "slide1": {
+            "header": "الموسم الجديد",
+            "subheader": "تخفيضات حصرية",
+            "button": "تسوق الآن",
+            "image": "slide1.webp"
+          },
+          "slide2": {
+            "header": "توصيل مجاني",
+            "subheader": "على جميع الطلبات الخاصة بك",
+            "button": "تسوق الآن",
+            "image": "slide2.webp"
+          },
+          "slide3": {
+            "header": "تشكيلة كبيرة",
+            "subheader": "فساتين، بناطيل، والمزيد",
+            "button": "تسوق الآن",
+            "image": "slide3.webp"
+          }
+        }
+      },
+        "notFound": {
+          "title": "404 غير موجود",
+          "description": "الصفحة التي زرتها غير موجودة. يمكنك العودة إلى الصفحة الرئيسية.",
+          "button": "العودة إلى الصفحة الرئيسية"
+        },
+      "product": {
+        "relatedProducts": "منتجات ذات صلة",
+        "addToCart": "أضف إلى السلة",
+        "buyNow": "اشتر الآن",
+        "productDetails": "تفاصيل المنتج",
+        "specifications": "مواصفات",
+        "reviews": "التعليقات",
+        "noReviews": "لا توجد تقييمات بعد.",
+        "writeReview": "كتابة تقييم"
+      },
+      "footer": {
+        "links": [
+          {
+            "text": "حولنا",
+            "href": "about"
+          },
+          {
+            "text": "اتصل بنا",
+            "href": "contact"
+          },
+          {
+            "text": "شروط الخدمة",
+            "href": "terms"
+          },
+          {
+            "text": "سياسة الخصوصية",
+            "href": "privacy"
+          }
+        ],
+        "socialLinks": [
+          {
+            "href": "#",
+            "icon": "facebook"
+          },
+          {
+            "href": "#",
+            "icon": "twitter"
+          },
+          {
+            "href": "#",
+            "icon": "instagram"
+          },
+          {
+            "href": "#",
+            "icon": "youtube"
+          },
+          {
+            "href": "#",
+            "icon": "linkedin"
+          }
+        ],
+        "contactInfo": {
+          "text": "تواصل معنا",
+          "phone": "+8801611112222",
+          "email": "support@exclusive.com"
+        }
+      }
+    }
+  }
+  
