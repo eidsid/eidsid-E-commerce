@@ -39,7 +39,7 @@ const Footer = ({ footerDectionary, logo }: props) => {
     quickLink,
   } = footerDectionary.otherTexts;
   return (
-    <footer className=" flex-col   bg-black  text-white gap-8   text-xs p-8 flex flex-col gap-16">
+    <footer className=" bg-black  text-white  text-xs p-8 flex flex-col gap-16">
       <div className="flex  gap-8 ">
         <ul className="flex flex-col  p-1  gap-2  ">
           <li className=" font-bold  text-lgs">{logo}</li>
