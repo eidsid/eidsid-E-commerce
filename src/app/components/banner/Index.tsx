@@ -6,9 +6,7 @@ import bannerImage4 from "@/public/images/home/banner4.webp";
 import Image from "next/image";
 import "@/app/globals.css";
 import Link from "next/link";
-import { useLocale } from "next-intl";
 const Banner = () => {
-  const local = useLocale();
   const sliderproducts = [
     {
       img: bannerImage1,
@@ -51,7 +49,7 @@ const Banner = () => {
               key={id}
               className="w-full h-96  flex-shrink-0 mr-4 ml-4 p-4 relative "
             >
-              <Link href={`${local}/products/${id}`}>
+              <Link href={`/products/${id}`}>
                 <Image
                   src={img.src}
                   fill

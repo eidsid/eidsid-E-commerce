@@ -1,46 +1,50 @@
 import React from "react";
-import { useTranslations, useLocale } from "next-intl";
 import Link from "next/link";
 import HeaderLangDropdown from "./changeLange";
-import { TLanguages } from "@/shared/types";
 import {
   HeartIcon,
   MagnifyingGlassIcon,
   ShoppingCartIcon,
 } from "@heroicons/react/24/outline";
-import { headers } from "next/headers";
+import { TLanguages } from "@/shared/types";
+type props = {
+  HeaderDectionary: {
+    links: { text: string; href: string }[];
+    logo: string;
+    topHeader: { text: string; href: string };
+    searchPlaceholder: string;
+  };
+  Local: TLanguages;
+};
 
-const Header = () => {
-  const logo = useTranslations("header");
-  const topHeaderT = useTranslations("header.topHeader");
-  const linkesT = useTranslations("header.links");
-  const searchPlaceholder = useTranslations("header");
-  const linkes = ["home", "about", "contact", "signup"] as const;
-  const Local = useLocale();
+const Header = async ({ HeaderDectionary, Local }: props) => {
+  const Header = HeaderDectionary;
+  const linkes = Header.links;
+  const logo = Header.logo;
 
   return (
     <header className=" max-lg  shadow">
       <section className=" topHeader bg-black text-white text-center   p-2 flex justify-evenly  text-sm">
         <div className="left flex gap-3">
-          <span>{topHeaderT("text")}</span>
-          <a href={`${Local}/${topHeaderT("href")}`} className=" underline">
-            {topHeaderT("href")}
+          <span>{Header.topHeader.text}</span>
+          <a href={Header.topHeader.href} className=" underline">
+            {Header.topHeader.href}
           </a>
         </div>
         <div className="right">
-          <HeaderLangDropdown lang={Local as TLanguages} />
+          <HeaderLangDropdown lang={Local} />
         </div>
       </section>
       <nav className="flex  gap-4  p-4 border justify-evenly">
-        <div className="log text-lg">{logo("logo")}</div>
+        <div className="log text-lg">{logo}</div>
         <ul className="flex gap-4  ">
-          {linkes.map((link, index) => (
+          {linkes.map(({ text, href }, index) => (
             <li key={index}>
               <Link
-                href={`${Local}/${linkesT(`${link}.href`)}`}
+                href={href}
                 className="transition-all py-2 px-4   active:bg-white active:text-black rounded-2xl hover:bg-color-text-2-hover hover:text-white"
               >
-                {linkesT(`${link}.text`)}
+                {text}
               </Link>
             </li>
           ))}
@@ -57,7 +61,7 @@ const Header = () => {
               type="search"
               name="search"
               id="search"
-              placeholder={searchPlaceholder("searchPlaceholder")}
+              placeholder={Header.searchPlaceholder}
               className=" pr-8 bg-inherit focus:outline-none   p-2 pl-4"
             />
           </form>
