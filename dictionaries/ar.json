@@ -1,5 +1,6 @@
 {
     "header": {
+      "logo":"تسوق بذكاء",
       "topHeader": {
         "text": "تخفيضات الصيف على جميع ملابس السباحة مع توصيل سريع مجاني - خصم 50%!",
         "href": "تسوق الآن"
@@ -554,6 +555,76 @@
           "email": "support@exclusive.com"
         }
       }
-    }
+    },
+    
+      "footer": {
+        "footerNav": [
+          {
+            "text": "الأهرامات",
+            "href": "https://www.google.com/maps/place/%D8%A3%D9%87%D8%B1%D8%A7%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9%E2%80%AD/@29.9772962,31.6927982,9z/data=!4m10!1m2!2m1!1spyramids!3m6!1s0x14584f7de239bbcd:0xca7474355a6e368b!8m2!3d29.9772962!4d31.1324955!15sCghweXJhbWlkc1oKIghweXJhbWlkc5IBE2FyY2hhZW9sb2dpY2FsX3NpdGXgAQA!16s%2Fm%2F07s6gb8?entry=ttu"
+          },
+          {
+            "text": "ShopSmart@gmail.com",
+            "href": "malito:ShopSmart@gmail.com"
+          },
+          {
+            "text": "+٢٠١١١٣٨١٦٨٢٦",
+            "href": "tel:+٢٠١١١٣٨١٦٨٢٦"
+          }
+        ],
+        "footerNav1": [
+          {
+            "text": "حسابي",
+            "href": "account"
+          },
+          {
+            "text": "تسجيل الدخول / التسجيل",
+            "href": "account"
+          },
+          {
+            "text": "سلة التسوق",
+            "href": "cart"
+          },
+          {
+            "text": "قائمة الرغبات",
+            "href": "wishlist"
+          },
+          {
+            "text": "المتجر",
+            "href": "shop"
+          }
+        ],
+        "footerNav2": [
+          {
+            "text": "سياسة الخصوصية",
+            "href": "privacy-policy"
+          },
+          {
+            "text": "شروط الاستخدام",
+            "href": "#"
+          },
+          {
+            "text": "الأسئلة الشائعة",
+            "href": "faq"
+          },
+          {
+            "text": "اتصل بنا",
+            "href": "contact"
+          }
+        ],
+        "otherTexts": {
+          "subscribe":         "اشتراك",
+          "TenPersontOff":     "احصل على خصم ١٠٪ على أول طلب",
+          "emailPlaceholder":  "أدخل بريدك الإلكتروني",
+          "downloadApp":       "تحميل التطبيق",
+          "saveNewUser":       "احفظ ٣$ مع تطبيق المستخدم الجديد فقط",
+          "copyRight":         "Eid Sayed ٢٠٢4. جميع الحقوق محفوظة",
+          "support":           "الدعم",
+          "account":            "الحساب",
+          "quickLink":          "الروابط السريعة"
+        }
+      }
+    
+    
   }
   

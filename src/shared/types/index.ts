@@ -79,3 +79,13 @@ export interface ICredentials {
 export interface ICartProductCard extends IProductCard {
   amount: number;
 }
+
+// ! children
+export interface IChildren {
+  children: React.ReactNode;
+}
+
+export interface linke {
+  text: string;
+  href: string;
+}

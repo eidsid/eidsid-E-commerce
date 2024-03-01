@@ -1,5 +1,6 @@
 {
   "header": {
+    "logo":"ShopSmart",
     "topHeader": {
       "text": "Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!",
       "href": "ShopNow"
@@ -605,16 +606,16 @@
   "footer": {
     "footerNav": [
       {
-        "text": "111 Bijoy sarani, Dhaka,  DH 1515, Bangladesh.",
-        "href": "https://www.google.com/maps/search/111+Bijoy+sarani,+Dhaka,++DH+1515,+Bangladesh./@23.7643021,90.3864755,17z/data=!3m1!4b1?entry=ttu"
+        "text": "pyramids",
+        "href": "https://www.google.com/maps/place/%D8%A3%D9%87%D8%B1%D8%A7%D9%85%D8%A7%D8%AA+%D8%A7%D9%84%D8%AC%D9%8A%D8%B2%D8%A9%E2%80%AD/@29.9772962,31.6927982,9z/data=!4m10!1m2!2m1!1spyramids!3m6!1s0x14584f7de239bbcd:0xca7474355a6e368b!8m2!3d29.9772962!4d31.1324955!15sCghweXJhbWlkc1oKIghweXJhbWlkc5IBE2FyY2hhZW9sb2dpY2FsX3NpdGXgAQA!16s%2Fm%2F07s6gb8?entry=ttu"
       },
       {
-        "text": "exclusive@gmail.com",
-        "href": "malito:exclusive@gmail.com"
+        "text": "ShopSmart@gmail.com",
+        "href": "malito:ShopSmart@gmail.com"
       },
       {
-        "text": "+88015-88888-9999",
-        "href": "tel:+88015-88888-9999"
+        "text": "+201113816826",
+        "href": "tel:+201113816826"
       }
     ],
     "footerNav1": [
@@ -658,15 +659,15 @@
       }
     ],
     "otherTexts": {
-      "subscribe": "subscribe",
-      "10%Off": "Get 10% off your first order",
-      "emailPlaceholder": "enter your email",
-      "downloadApp": "download App",
-      "saveNewUser": "save 3$ with App New User Only",
-      "copyRight": "Rimel 2022. All right reserved",
-      "support": "supprot",
-      "account": "account",
-      "quickLink": "quick link"
+      "subscribe":         "subscribe",
+      "TenPersontOff":     "Get 10% off your first order",
+      "emailPlaceholder":  "enter your email",
+      "downloadApp":       "download App",
+      "saveNewUser":       "save 3$ with App New User Only",
+      "copyRight":         "Eid Sayed 2024. All right reserved",
+      "support":           "supprot",
+      "account":            "account",
+      "quickLink":          "quick link"
     }
   }
 }

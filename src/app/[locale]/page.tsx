@@ -1,12 +1,19 @@
-import { useTranslations } from "next-intl";
+import { getLocaleInServer } from "@/shared/utils";
+import Banner from "../components/banner/Index";
+import Sidbar from "../components/sidebar";
+import { getDict } from "../../../dictionaries/dictionaries";
+import { headers } from "next/headers";
 
-export default function Home() {
-  const t = useTranslations("header");
+export default async function Home() {
+  const Local = getLocaleInServer(headers);
+  const dectionary: any = await getDict(Local);
 
   return (
     <div>
-      <h1 className="text-4xl mb-4 font-semibold">{t("topHeader.text")}</h1>
-      <p>{t("topHeader.href")}</p>
+      <div className=" container flex   w-screen p-4 ">
+        <Sidbar links={dectionary.header.links} />
+        <Banner />
+      </div>
     </div>
   );
 }

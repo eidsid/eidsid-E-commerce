@@ -1,14 +1,31 @@
-import createMiddleware from "next-intl/middleware";
+import { NextRequest, NextResponse } from "next/server";
 
-export default createMiddleware({
-  // A list of all locales that are supported
-  locales: ["en", "ar"],
+const locales = ["en", "ar"];
 
-  // Used when no locale matches
-  defaultLocale: "en",
-});
+export async function middleware(request: NextRequest) {
+  // ! set lang in headers
+  const requestHeaders = new Headers(request.headers);
+  const response = NextResponse.next({
+    request: {
+      headers: requestHeaders,
+    },
+  });
+  response.headers.set("locale", request.nextUrl.pathname.split("/")[1]);
+
+  // ! handling localization
+  const { pathname } = request.nextUrl;
+  const pathnameHasLocale = locales.some(
+    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
+  );
+
+  if (pathnameHasLocale) return response;
+
+  const locale = locales[0];
+  request.nextUrl.pathname = `/${locale}${pathname}`;
+
+  return Response.redirect(request.nextUrl);
+}
 
 export const config = {
-  // Match only internationalized pathnames
-  matcher: ["/", "/(ar|en)/:path*"],
+  matcher: ["/((?!api|static|.*\\..*|_next).*)"],
 };
