@@ -40,7 +40,7 @@ const Banner = () => {
     },
   ];
   return (
-    <div className="flex sliderContainer   h-full w-600  relative border-1 mx-auto my-1 ">
+    <div className="flex sliderContainer   h-full w-600 relative  my-1 ">
       <div className="slider-content overflow-x-scroll flex   h-fit  snap-mandatory snap-x  scroll-smooth shadow-sm w-full  m-h transition-all   relative nocsrolbar">
         {sliderproducts.map(({ img, title, id }) => {
           return (

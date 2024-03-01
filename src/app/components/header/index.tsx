@@ -23,8 +23,8 @@ const Header = async ({ HeaderDectionary, Local }: props) => {
   const logo = Header.logo;
 
   return (
-    <header className=" max-lg  shadow">
-      <section className=" topHeader bg-black text-white text-center   p-2 flex justify-evenly  text-sm">
+    <header className="  shadow">
+      <section className=" bg-black text-white text-center   p-2 flex justify-evenly  text-sm">
         <div className="left flex gap-3">
           <span>{Header.topHeader.text}</span>
           <a href={Header.topHeader.href} className=" underline">
@@ -35,7 +35,7 @@ const Header = async ({ HeaderDectionary, Local }: props) => {
           <HeaderLangDropdown lang={Local} />
         </div>
       </section>
-      <nav className="flex  gap-4  p-4 border justify-evenly">
+      <nav className="flex  gap-4  p-4 border justify-evenly ">
         <div className="log text-lg">{logo}</div>
         <ul className="flex gap-4  ">
           {linkes.map(({ text, href }, index) => (
