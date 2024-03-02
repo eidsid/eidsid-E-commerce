@@ -5,13 +5,13 @@ import qr from "@/public/images/qr.png";
 import googlePlay from "@/public/images/googleplay.png";
 import appStore from "@/public/images/appstore.jpg";
 import Image from "next/image";
-import { linke } from "@/shared/types";
+import { link } from "@/shared/types";
 
 type props = {
   footerDectionary: {
-    footerNav2: linke[];
-    footerNav1: linke[];
-    footerNav: linke[];
+    footerNav2: link[];
+    footerNav1: link[];
+    footerNav: link[];
     otherTexts: {
       subscribe: string;
       TenPersontOff: string;
