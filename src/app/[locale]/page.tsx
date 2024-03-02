@@ -10,8 +10,8 @@ export default async function Home() {
 
   return (
     <div>
-      <div className=" container flex   justify-between p-4  max-w-screen-lg  mx-auto ">
-        <Sidbar links={dectionary.header.links} />
+      <div className=" container flex   justify-between p-4  max-w-screen-lg  mx-auto   ">
+        <Sidbar sideMenu={dectionary.pages.index.sideMenu} />
         <Banner />
       </div>
     </div>
