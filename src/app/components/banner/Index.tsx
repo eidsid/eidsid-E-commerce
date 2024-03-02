@@ -21,22 +21,22 @@ const Banner = () => {
       id: 2,
     },
     {
-      img: bannerImage1,
-      title: "img three",
-      description: "this is image three description ",
-      id: 3,
-    },
-    {
       img: bannerImage3,
       title: "img three",
       description: "this is image three description ",
       id: 3,
     },
     {
+      img: bannerImage2,
+      title: "img three",
+      description: "this is image three description ",
+      id: 4,
+    },
+    {
       img: bannerImage4,
       title: "img four",
       description: "this is image four description ",
-      id: 4,
+      id: 5,
     },
   ];
   return (
@@ -61,11 +61,11 @@ const Banner = () => {
           );
         })}
       </div>
-      <div className="slider-nav mt-4 flex justify-center absolute  bottom-8  left-1/2  -translate-x-1/2  z-10 ">
-        {sliderproducts.map(({}, index) => (
+      <div className="slider-nav mt-4 flex justify-center absolute  bottom-8  left-1/2  -translate-x-1/2   ">
+        {sliderproducts.map(({ id }) => (
           <a
-            key={index}
-            href={`#slider${index}`}
+            key={id}
+            href={`#slider${id}`}
             className="w-6 h-6 bg-gray-400 rounded-full mx-1  active:bg-white"
           ></a>
         ))}
