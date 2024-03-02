@@ -85,7 +85,7 @@ export interface IChildren {
   children: React.ReactNode;
 }
 
-export interface linke {
+export interface link {
   text: string;
   href: string;
 }
