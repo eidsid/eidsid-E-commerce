@@ -1,6 +1,17 @@
 {
   "header": {
     "logo":"ShopSmart",
+    "accountDropDown":{
+      "manageAccount":{
+       "href":"acount",
+       "text":"Manage My Account"
+      }, 
+      "MyOrder":{
+       "href":"order",
+       "text":"My Orders"
+      },
+      "logout":"Logout"
+       },
     "topHeader": {
       "text": "Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!",
       "href": "ShopNow"
@@ -25,6 +36,7 @@
     ],
     "searchPlaceholder": "What are you looking for?"
   },
+
   "pages": {
     "aboutUs": {
       "section1": {
@@ -251,7 +263,7 @@
     },
     "registration": {
       "login": {
-        "title": "Log in to Exclusive",
+        "title": "Log in to shopsmart",
         "subtitle": "Enter your details below",
         "emailOrPhone": "Email Or Phone Number",
         "password": "password",

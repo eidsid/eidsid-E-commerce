@@ -6,13 +6,19 @@ import {
   MagnifyingGlassIcon,
   ShoppingCartIcon,
 } from "@heroicons/react/24/outline";
-import { TLanguages } from "@/shared/types";
+import { TLanguages, link } from "@/shared/types";
+import AccountDropdown from "../accountDropDownMenu/AccountDropdown ";
 type props = {
   HeaderDectionary: {
     links: { text: string; href: string }[];
     logo: string;
     topHeader: { text: string; href: string };
     searchPlaceholder: string;
+    accountDropDown: {
+      manageAccount: link;
+      MyOrder: link;
+      logout: string;
+    };
   };
   Local: TLanguages;
 };
@@ -21,7 +27,8 @@ const Header = async ({ HeaderDectionary, Local }: props) => {
   const Header = HeaderDectionary;
   const linkes = Header.links;
   const logo = Header.logo;
-
+  const AccountTransation = Header.accountDropDown;
+  let login = true;
   return (
     <header className="  shadow">
       <section className=" bg-black text-white text-center   p-2 flex justify-evenly  text-sm">
@@ -76,6 +83,7 @@ const Header = async ({ HeaderDectionary, Local }: props) => {
                 className=" cursor-pointer"
               />
             </li>
+            {login && <AccountDropdown AccountTransation={AccountTransation} />}
           </ul>
         </section>
       </nav>
