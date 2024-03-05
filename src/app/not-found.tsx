@@ -1,9 +1,12 @@
-export default function NotFound() {
+import React from "react";
+import { NotFoundClient } from "./components/NotFoundClient/NotFoundClient";
+
+const NotFound = async () => {
   return (
-    <html>
-      <body className="text-center">
-        <h1 className="mt-10 font-semibold">Something went wrong!</h1>
-      </body>
-    </html>
+    <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
+      <NotFoundClient />
+    </div>
   );
-}
+};
+
+export default NotFound;
