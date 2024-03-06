@@ -1,6 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { IChildren } from "@/shared/types/index";
+import { getLocaleInServer } from "@/shared/utils";
+import { headers } from "next/headers";
 
 export const metadata: Metadata = {
   title: "E-Commerce",
@@ -8,8 +10,10 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: IChildren) {
+  const Local = getLocaleInServer(headers);
+
   return (
-    <html lang="en">
+    <html lang={Local}>
       <body suppressHydrationWarning={true}>{children}</body>
     </html>
   );
