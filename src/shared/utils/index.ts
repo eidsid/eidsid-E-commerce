@@ -1,4 +1,4 @@
-import { ICartProductCard, IProductCard, TLanguages, TTime } from "../types";
+import { ICartProductCard, TLanguages, TTime } from "../types";
 
 export function calculateTimeLeft(targetDate: Date): TTime {
   const currentDate = new Date();
