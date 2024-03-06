@@ -3,7 +3,7 @@ import Banner from "../components/banner/Index";
 import Sidbar from "../components/sidebar";
 import { getDict } from "../../../dictionaries/dictionaries";
 import { headers } from "next/headers";
-import FlashSeles from "../components/FlashSeles";
+import FlashSales from "../components/FlashSales";
 export default async function Home() {
   const Local = getLocaleInServer(headers);
   const dectionary: any = await getDict(Local);
@@ -14,7 +14,7 @@ export default async function Home() {
         <Sidbar sideMenu={dectionary.pages.index.sideMenu} />
         <Banner />
       </div>
-      <FlashSeles />
+      <FlashSales />
     </div>
   );
 }
