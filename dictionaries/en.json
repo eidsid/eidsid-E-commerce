@@ -608,11 +608,6 @@
         }
       ]
     },
-    "notFound": {
-      "title": "404 not found",
-      "description": "Your visited page not found. You may go home page.",
-      "button": "Back to home page"
-    },
     "loading": "Loading, please wait..."
   },
   "footer": {
