@@ -3,14 +3,13 @@ export type TLanguages = "en" | "ar";
 
 // ! product card
 export interface IProductCard {
-  discount?: number;
-  images: string[];
+  id: string;
+  imgUrl: string;
   name: string;
   price: number;
   rating: number[];
   ratingAmount: number;
-  isFavorite?: boolean;
-  isNew?: boolean;
+  discount?: number;
   colors?: string[];
 }
 
