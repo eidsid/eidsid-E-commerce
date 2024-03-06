@@ -13,11 +13,13 @@ import Link from "next/link";
 type prop = {
   favoritesIDs: string[];
   product: IProductCard;
-  addProductToFavFunction: (productID: string) => void;
 };
-const Product = ({ favoritesIDs, addProductToFavFunction, product }: prop) => {
+const Product = ({ favoritesIDs, product }: prop) => {
   const { imgUrl, name, price, rating, ratingAmount, discount, id } = product;
   const isFavorite = favoritesIDs.includes(product.id);
+  const addProductToFavFunction = (productID: string): void => {
+    console.log(`product with is ${productID} add to favorites`);
+  };
   return (
     <div className=" relative  gap-4">
       <div className="flex  justify-center items-center border  relative  h-44 w-44  rounded-md   bg-slate-200  group       ">
