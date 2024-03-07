@@ -5,6 +5,7 @@ import { getDict } from "../../../../dictionaries/dictionaries";
 import { getLocaleInServer } from "@/shared/utils";
 import { headers } from "next/headers";
 import TimeShow from "../timeShow/TimeShow";
+import Link from "next/link";
 const FlashSales = async () => {
   const favoritesIDs: string[] = ["1", "3", "2", " 4", "6", " 7", " 8"];
   const Local = getLocaleInServer(headers);
@@ -56,6 +57,14 @@ const FlashSales = async () => {
           );
         })}
       </section>
+      <div className=" flex justify-center mb-4">
+        <Link
+          className=" bg-red-700 text-white  py-4 px-8"
+          href={"products/FlashSales"}
+        >
+          {viewAll}
+        </Link>
+      </div>
     </section>
   );
 };
