@@ -1,18 +1,22 @@
 import React from "react";
 import { homeSalesSwiper } from "@/data/index";
 import Product from "../productShow/Product";
-import { getDict } from "../../../../dictionaries/dictionaries";
-import { getLocaleInServer } from "@/shared/utils";
-import { headers } from "next/headers";
 import TimeShow from "../timeShow/TimeShow";
 import Link from "next/link";
-const FlashSales = async () => {
+import { TLanguages } from "@/shared/types";
+type props = {
+  dic: {
+    title: string;
+    description: string;
+    viewAll: string;
+    timeDectionary: any;
+  };
+  Local: TLanguages;
+};
+const FlashSales = async ({ Local, dic }: props) => {
   const favoritesIDs: string[] = ["1", "3", "2", " 4", "6", " 7", " 8"];
-  const Local = getLocaleInServer(headers);
-  const dectionary: any = await getDict(Local);
 
-  const Salesdescription = dectionary.pages.index.sales;
-  const { title, description, viewAll, ...timeDectionary } = Salesdescription;
+  const { title, description, viewAll, ...timeDectionary } = dic;
 
   //timer
   const currentDate = new Date();

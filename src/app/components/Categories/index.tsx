@@ -1,9 +1,6 @@
 import React from "react";
-import { getDict } from "../../../../dictionaries/dictionaries";
-import { getLocaleInServer } from "@/shared/utils";
-import { headers } from "next/headers";
+
 import {
-  CalculatorIcon,
   CameraIcon,
   ClockIcon,
   ComputerDesktopIcon,
@@ -11,17 +8,19 @@ import {
   PuzzlePieceIcon,
 } from "@heroicons/react/24/outline";
 import Link from "next/link";
-const Categories = async () => {
-  const Local = getLocaleInServer(headers);
-  const dectionary: any = await getDict(Local);
-  type catogryDescriptionType = {
+import { TLanguages } from "@/shared/types";
+type props = {
+  dic: {
     title: string;
     description: string;
     categories: { title: string; icon: string; href: string }[];
   };
-  const Categorydescription: catogryDescriptionType =
-    dectionary.pages.index.category;
+  Local: TLanguages;
+};
+const Categories = async ({ dic, Local }: props) => {
+  const Categorydescription = dic;
   const { title, description, categories } = Categorydescription;
+
   const iconComponents: { [key in string]: JSX.Element } = {
     CameraIcon: <CameraIcon height={100} width={100} />,
     ComputerIcon: <ComputerDesktopIcon height={100} width={100} />,
