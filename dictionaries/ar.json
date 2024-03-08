@@ -491,7 +491,86 @@
           "minutes": "دقائق",
           "seconds": "ثواني",
           "viewAll": "عرض جميع المنتجات"
+        },
+        "category":{
+          "title": "الفئات",
+"description": "تصفح حسب الفئة",
+"categories": [
+  {
+    "title": "الهواتف",
+    "icon": "PhoneIcon",
+    "href": "phones"
+  },
+  {
+    "title": "الحواسيب",
+    "icon": "ComputerIcon",
+    "href": "computers"
+  },
+  {
+    "title": "الساعات الذكية",
+    "icon": "WatchIcon",
+    "href": "smartWatch"
+  },
+  {
+    "title": "الكاميرات",
+    "icon": "CameraIcon",
+    "href": "camera"
+  },
+  {
+    "title": "ألعاب الفيديو",
+    "icon": "GamingIcon",
+    "href": "gaming"
+  },
+  {
+    "title": "الحواسيب",
+    "icon": "ComputerIcon",
+    "href": "computers"
+  },
+  {
+    "title": "الساعات الذكية",
+    "icon": "WatchIcon",
+    "href": "smartWatch"
+  },
+  {
+    "title": "الحواسيب",
+    "icon": "ComputerIcon",
+    "href": "computers"
+  },
+  {
+    "title": "الساعات الذكية",
+    "icon": "WatchIcon",
+    "href": "smartWatch"
+  },
+  {
+    "title": "الكاميرات",
+    "icon": "CameraIcon",
+    "href": "camera"
+  },
+  {
+    "title": "ألعاب الفيديو",
+    "icon": "GamingIcon",
+    "href": "gaming"
+  },
+  {
+    "title": "الحواسيب",
+    "icon": "ComputerIcon",
+    "href": "computers"
+  },
+  {
+    "title": "الساعات الذكية",
+    "icon": "WatchIcon",
+    "href": "smartWatch"
+  }
+]
         }
+      
+      ,
+        "bestSelling": {
+          "title": "هذا الشهر",
+          "description": "أفضل المنتجات المباعة",
+          "viewAll": "عرض الكل"
+        }
+      
         ,
         "slider": {
           "slide1": {

@@ -515,41 +515,71 @@
         "categories": [
           {
             "title": "phones",
-            "icon": "PhoneIcon"
+            "icon": "PhoneIcon",
+            "href": "phones"
           },
           {
             "title": "computers",
-            "icon": "ComputerIcon"
+            "icon": "ComputerIcon",
+            "href": "computers"
           },
           {
             "title": "smartWatch",
-            "icon": "WatchIcon"
+            "icon": "WatchIcon",
+            "href": "smartWatch"
           },
           {
             "title": "camera",
-            "icon": "CameraIcon"
-          },
-          {
-            "title": "headPhones",
-            "icon": "HeadPhonesIcon"
+            "icon": "CameraIcon",
+            "href": "camera"
           },
           {
             "title": "gaming",
-            "icon": "GamingIcon"
+            "icon": "GamingIcon",
+            "href": "gaming"
           },
           {
             "title": "computers",
-            "icon": "ComputerIcon"
+            "icon": "ComputerIcon",
+            "href": "computers"
           },
           {
             "title": "smartWatch",
-            "icon": "WatchIcon"
+            "icon": "WatchIcon",
+            "href": "smartWatch"
           },
           {
-            "title": "headPhones",
-            "icon": "HeadPhonesIcon"
+            "title": "computers",
+            "icon": "ComputerIcon",
+            "href": "computers"
+          },
+          {
+            "title": "smartWatch",
+            "icon": "WatchIcon",
+            "href": "smartWatch"
+          },
+          {
+            "title": "camera",
+            "icon": "CameraIcon",
+            "href": "camera"
+          },
+          {
+            "title": "gaming",
+            "icon": "GamingIcon",
+            "href": "gaming"
+          },
+          {
+            "title": "computers",
+            "icon": "ComputerIcon",
+            "href": "computers"
+          },
+          {
+            "title": "smartWatch",
+            "icon": "WatchIcon",
+            "href": "smartWatch"
           }
         ]
+      
       },
       "bestSelling": {
         "title": "this month",
