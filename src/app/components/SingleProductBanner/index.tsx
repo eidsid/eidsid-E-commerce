@@ -49,7 +49,7 @@ const SingleProductBanner = ({ Local, dic }: props) => {
         Local === "ar" && "flex-row-reverse  text-right  "
       }`}
     >
-      <div className="flex flex-col justify-between  w-2/4   h-60 text-white ">
+      <div className="flex flex-col justify-between  w-2/4   h-60 text-white gap-6 ">
         <span className="text-green-500  text-sm  ">{title}</span>
         <span className=" text-4xl first-letter:capitalize ">
           {description}
