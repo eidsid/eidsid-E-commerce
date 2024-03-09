@@ -8,6 +8,7 @@ import Categories from "../components/Categories";
 import BestSales from "../components/bestSales";
 import SingleProductBanner from "../components/SingleProductBanner";
 import OurProfucts from "../components/ourproducts";
+import NewArival from "../components/newArrival";
 export default async function Home() {
   const Local = getLocaleInServer(headers);
   const dectionary: any = await getDict(Local);
@@ -17,6 +18,8 @@ export default async function Home() {
   const BestSalesDectionary = dectionary.pages.index.bestSelling;
   const singProductDectionary = dectionary.pages.index.banner;
   const productsDectionary = dectionary.pages.index.products;
+  const newArivalDectionary = dectionary.pages.index.newArrival;
+
   const favoritesIDs: string[] = ["1", "3", "2", " 4", "6", " 7", " 8"];
 
   return (
@@ -43,6 +46,7 @@ export default async function Home() {
           dic={productsDectionary}
           Local={Local}
         />
+        <NewArival Local={Local} dic={newArivalDectionary} />
       </div>
     </div>
   );
