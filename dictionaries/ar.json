@@ -571,7 +571,8 @@
         },
         "newArrival": {
           "title": "المنتجات المميزة",
-          "description": "وصل حديثًا"},
+          "description": "وصل حديثًا"
+        ,"shopnow":"تسوق الآن"},
         "services": [
           {
             "title": "توصيل مجاني وسريع",
