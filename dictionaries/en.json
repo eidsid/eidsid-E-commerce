@@ -602,23 +602,8 @@
       },
       "newArrival": {
         "title": "featured",
-        "description": "new arrival",
-        "ps5": {
-          "title": "PlayStation 5",
-          "description": "Black and White version of PS5 coming out on sale"
-        },
-        "women": {
-          "title": "Women’s Collections",
-          "description": "Featured woman collections that give you another vibe."
-        },
-        "speakers": {
-          "title": "Speakers",
-          "description": "Amazon wireless speakers"
-        },
-        "perfume": {
-          "title": "Perfume",
-          "description": "GUCCI INTENSE OUD EDP"
-        }
+        "description": "new arrival"
+  
       },
       "services": [
         {
