@@ -6,6 +6,7 @@ import { headers } from "next/headers";
 import FlashSales from "../components/FlashSales";
 import Categories from "../components/Categories";
 import BestSales from "../components/bestSales";
+import SingleProductBanner from "../components/SingleProductBanner";
 export default async function Home() {
   const Local = getLocaleInServer(headers);
   const dectionary: any = await getDict(Local);
@@ -13,7 +14,7 @@ export default async function Home() {
   const CategorieDectionary = dectionary.pages.index.category;
   const sideMenuDectionary = dectionary.pages.index.sideMenu;
   const BestSalesDectionary = dectionary.pages.index.bestSelling;
-
+  const singProductDectionary = dectionary.pages.index.banner;
   return (
     <div className="container  m-auto  ">
       <div className="  flex   justify-between p-4   mx-auto   ">
@@ -24,6 +25,7 @@ export default async function Home() {
         <FlashSales Local={Local} dic={flashSlaesDectionary} />
         <Categories Local={Local} dic={CategorieDectionary} />
         <BestSales Local={Local} dic={BestSalesDectionary} />
+        <SingleProductBanner Local={Local} dic={singProductDectionary} />
       </div>
     </div>
   );
