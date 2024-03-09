@@ -45,3 +45,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Acknowledgements
 
 - Special thanks to the Next.js and Tailwind CSS communities for their amazing frameworks and support.
+
+## local path
+
+cd -LiteralPath [locale]
