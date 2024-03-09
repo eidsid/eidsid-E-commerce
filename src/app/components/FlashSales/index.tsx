@@ -12,10 +12,9 @@ type props = {
     timeDectionary: any;
   };
   Local: TLanguages;
+  favoritesIDs: string[];
 };
-const FlashSales = async ({ Local, dic }: props) => {
-  const favoritesIDs: string[] = ["1", "3", "2", " 4", "6", " 7", " 8"];
-
+const FlashSales = async ({ Local, dic, favoritesIDs }: props) => {
   const { title, description, viewAll, ...timeDectionary } = dic;
 
   //timer
