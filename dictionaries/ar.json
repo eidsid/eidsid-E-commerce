@@ -202,12 +202,14 @@
       },
       "registration": {
         "login": {
-          "title": "تسجيل الدخول إلى تسوق بذكاء",
+          "title": "تسجيل الدخول ",
           "subtitle": "أدخل تفاصيلك أدناه",
           "emailOrPhone": "البريد الإلكتروني أو رقم الهاتف",
           "password": "كلمة المرور",
           "login": "تسجيل الدخول",
-          "forgetPassword": "نسيت كلمة المرور"
+          "forgetPassword": "نسيت كلمة المرور",
+          "signGoogle": "التسجيل بواسطة جوجل",
+          "dontHaveAccount": "ليس لديك حساب ؟ "
         },
         "signUp": {
           "title": "إنشاء حساب",
@@ -222,6 +224,12 @@
           "signGoogle": "التسجيل بواسطة جوجل",
           "haveAccount": "هل لديك حساب بالفعل؟",
           "login": "تسجيل الدخول"
+        },
+        "resetPassword":{
+        "title":"إعادة تعيين كلمة المرور",
+        "email":"عنوان البريد الإلكتروني",
+        "resetButtin":"إعادة تعيين كلمة المرور",
+        "home":"الرئيسية"
         }
       },
       "wishlist": {
@@ -577,20 +585,19 @@
           {
             "title": "توصيل مجاني وسريع",
             "subtitle": "توصيل مجاني لجميع الطلبات التي تزيد عن 140 دولارًا",
-            "image": "delivery.svg"
+            "image": "delivery"
           },
           {
             "title": "خدمة العملاء على مدار الساعة",
             "subtitle": "دعم عملاء ودود على مدار الساعة",
-            "image": "support.svg"
+            "image": "support"
           },
           {
             "title": "ضمان استرداد الأموال",
             "subtitle": "نقوم بإعادة الأموال في غضون 30 يومًا",
-            "image": "safety.svg"
+            "image": "safety"
           }
         ]
-      
       ,
         "bestSelling": {
           "title": "هذا الشهر",

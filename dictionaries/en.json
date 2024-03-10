@@ -163,17 +163,17 @@
           {
             "title": "FREE AND FAST DELIVERY",
             "subtitle": "Free delivery for all orders over $140",
-            "image": "delivery.svg"
+            "image": "delivery"
           },
           {
             "title": "24/7 CUSTOMER SERVICE",
             "subtitle": "Friendly 24/7 customer support",
-            "image": "support.svg"
+            "image": "support"
           },
           {
             "title": "MONEY BACK GUARANTEE",
             "subtitle": "We reurn money within 30 days",
-            "image": "safety.svg"
+            "image": "safety"
           }
         ]
       }
@@ -283,6 +283,12 @@
         "signGoogle": "sign up with google",
         "haveAccount": "already have an account?",
         "login": "log in"
+      },
+      "resetPassword":{
+        "title":"Reset Password",
+        "email":"email address",
+        "resetButtin":"resetPassword",
+        "home":"Home"
       }
     },
     "wishlist": {
@@ -610,17 +616,17 @@
         {
           "title": "FREE AND FAST DELIVERY",
           "subtitle": "Free delivery for all orders over $140",
-          "image": "delivery.svg"
+          "image": "delivery"
         },
         {
           "title": "24/7 CUSTOMER SERVICE",
           "subtitle": "Friendly 24/7 customer support",
-          "image": "support.svg"
+          "image": "support"
         },
         {
           "title": "MONEY BACK GUARANTEE",
           "subtitle": "We reurn money within 30 days",
-          "image": "safety.svg"
+          "image": "safety"
         }
       ]
     },
