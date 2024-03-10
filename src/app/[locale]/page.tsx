@@ -10,6 +10,7 @@ import SingleProductBanner from "../components/SingleProductBanner";
 import OurProfucts from "../components/ourproducts";
 import NewArival from "../components/newArrival";
 import Services from "../components/services";
+import BackToTopButton from "../components/scrollToTop";
 export default async function Home() {
   const Local = getLocaleInServer(headers);
   const dectionary: any = await getDict(Local);
@@ -50,6 +51,7 @@ export default async function Home() {
         />
         <NewArival Local={Local} dic={newArivalDectionary} />
         <Services dic={servicesDectionary} />
+        <BackToTopButton />
       </div>
     </div>
   );
