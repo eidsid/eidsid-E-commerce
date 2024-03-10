@@ -4,7 +4,7 @@ import SignUpbannerImage from "@/public/images/sign_up/phones.webp";
 import { getLocaleInServer } from "@/shared/utils";
 import { headers } from "next/headers";
 import { getDict } from "../../../../../dictionaries/dictionaries";
-import Client from "./LoginClient";
+import Client from "./reset";
 
 const resetPassword = async () => {
   const Local = getLocaleInServer(headers);
