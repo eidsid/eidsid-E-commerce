@@ -11,6 +11,9 @@ const config: Config = {
       width: {
         600: "600px", // Example custom width
       },
+      height: {
+        400: "600px", // Example custom width
+      },
       borderRadius: {
         sm: "4px",
       },
