@@ -31,14 +31,18 @@ const Product = ({ favoritesIDs, product }: prop) => {
           )}
           {isFavorite ? (
             <FillHeartIcon
-              className={"  bg-fuchsia-100 rounded-full p-1  text-red-600 "}
+              className={
+                "  bg-fuchsia-100 rounded-full p-1  text-red-600 z-50 cursor-pointer "
+              }
               height={30}
               width={30}
               onClick={() => addProductToFavFunction(id)}
             />
           ) : (
             <HeartIcon
-              className={"  bg-fuchsia-100 rounded-full p-1 "}
+              className={
+                "  bg-fuchsia-100 rounded-full p-1 z-50 cursor-pointer "
+              }
               height={30}
               width={30}
               onClick={() => addProductToFavFunction(id)}
@@ -73,7 +77,7 @@ const Product = ({ favoritesIDs, product }: prop) => {
                 key={index}
                 hanging={15}
                 width={15}
-                className={`${fill && " text-yellow-400"} `}
+                className={`${fill && " text-yellow-400"}  `}
               />
             );
           })}
