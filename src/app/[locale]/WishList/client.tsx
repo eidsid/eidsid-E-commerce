@@ -4,10 +4,10 @@ import React, { useState } from "react";
 import { homeSalesSwiper } from "@/data/index";
 import Product from "@/app/components/productShow/Product";
 import { XMarkIcon } from "@heroicons/react/24/outline";
+import Arrow from "@/app/components/buttons/Arrow";
 type props = {
   dic: {
     wishlist: string;
-    moveAllBag: string;
     forYou: string;
     seeAll: string;
     removeTitle: string;
@@ -82,7 +82,9 @@ const Client = ({ dic, Locale }: props) => {
         </div>
 
         {/* Render the "See All" button */}
-        <button onClick={handleSeeAll}>{showAll ? "Hide" : seeAll}</button>
+        <button onClick={handleSeeAll} className="flex justify-center">
+          {showAll ? <Arrow direction="up" /> : seeAll}
+        </button>
       </div>
 
       <div className="mb-10  flex flex-col gap-10">
