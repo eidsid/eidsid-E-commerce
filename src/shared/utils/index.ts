@@ -29,13 +29,17 @@ export function calculateTimeLeft(targetDate: Date): TTime {
   };
 }
 
-// ! amount handlers
+// handle amount !
 export function increaseAmount(amount: number): number {
-  return amount >= 20 ? amount : amount + 1;
+  if (amount > 20) {
+    return 20;
+  } else if (amount < 1) {
+    return 1;
+  } else {
+    return amount;
+  }
 }
-export function decreaseAmount(amount: number): number {
-  return amount - 1;
-}
+
 // ! calculating carts delivery price
 export function calculateDeliveryPrice(
   cartArray: ICartProductCard[],
@@ -51,7 +55,7 @@ export function calculateDeliveryPrice(
       }
     }, 0);
 
-    return sum >= 140 ? 0 : 100;
+    return sum;
   } else {
     return state;
   }
