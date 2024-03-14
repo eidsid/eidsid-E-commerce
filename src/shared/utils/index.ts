@@ -30,7 +30,7 @@ export function calculateTimeLeft(targetDate: Date): TTime {
 }
 
 // handle amount !
-export function increaseAmount(amount: number): number {
+export function handleAmount(amount: number): number {
   if (amount > 20) {
     return 20;
   } else if (amount < 1) {
