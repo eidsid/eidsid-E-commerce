@@ -4,8 +4,36 @@ import Gambod from "@/public/images/products/black-gamepad.webp";
 import React, { FormEvent, useState } from "react";
 import Image from "next/image";
 import { XMarkIcon } from "@heroicons/react/24/outline";
-
-const Client = () => {
+import { TLanguages } from "@/shared/types";
+import Link from "next/link";
+type props = {
+  dectionary: {
+    topLevelTexts: {
+      product: string;
+      price: string;
+      quantity: string;
+      subtotal: string;
+    };
+    buttons: {
+      return: string;
+      apply: string;
+      process: string;
+      applyPlaceholder: string;
+    };
+    cartTotal: {
+      title: string;
+      subtotal: string;
+      shipping: string;
+      total: string;
+      coupon: string;
+    };
+    removeTitle: string;
+    title: string;
+  };
+  locale: TLanguages;
+};
+const Client = ({ dectionary, locale }: props) => {
+  const { topLevelTexts, buttons, cartTotal, removeTitle, title } = dectionary;
   const intailProducts = [
     {
       id: "001",
@@ -112,15 +140,29 @@ const Client = () => {
   };
   return (
     <div className="container mx-auto mt-8">
-      <h1 className="text-3xl font-semibold mb-4">Checkout</h1>
+      <h1
+        className={`text-3xl font-semibold mb-4 ${
+          locale == "ar" && "text-right"
+        }`}
+      >
+        {title}
+      </h1>
       {/* Product table */}
-      <table className="w-full border-collapse border border-gray-200  max-w-3xl">
+      <table className="w-full border-collapse border border-gray-200 ">
         <thead>
           <tr className="bg-gray-100">
-            <th className="border border-gray-200 p-2">Product</th>
-            <th className="border border-gray-200 p-2">Price</th>
-            <th className="border border-gray-200 p-2">Quantity</th>
-            <th className="border border-gray-200 p-2">Subtotal</th>
+            <th className="border border-gray-200 p-2">
+              {topLevelTexts.product}
+            </th>
+            <th className="border border-gray-200 p-2">
+              {topLevelTexts.price}
+            </th>
+            <th className="border border-gray-200 p-2">
+              {topLevelTexts.quantity}
+            </th>
+            <th className="border border-gray-200 p-2">
+              {topLevelTexts.subtotal}
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -131,7 +173,7 @@ const Client = () => {
                   <XMarkIcon
                     onClick={() => removeProductFromCart(id)}
                     height={25}
-                    title={"removeTitle"}
+                    title={removeTitle}
                     className="cursor-pointer hover:bg-red-400 font-bold rounded-full bg-red-600 text-white absolute -top-3 left-0 z-20"
                   />
                   <Image
@@ -177,29 +219,37 @@ const Client = () => {
               type="text"
               name="coupon"
               className="w-60 px-4 py-2 rounded border border-gray-300 focus:outline-none focus:border-blue-500"
-              placeholder="Coupon Code"
+              placeholder={buttons.applyPlaceholder}
             />
             <button className="bg-color-secondary-2 text-white px-6 py-2 rounded">
-              Apply Coupon
+              {buttons.apply}
             </button>
           </form>
         </div>
 
         {/* Checkout section */}
         <div className="flex items-center   flex-col  gap-1 w-2/4  max-w-96">
-          <h1 className="text-lg font-semibold mr-4">Cart Total</h1>
+          <h1 className="text-lg font-semibold mr-4">{cartTotal.title}</h1>
           <hr className="border-gray-300 w-full mr-4" />
           {/* Subtotal */}
-          <div className="flex  justify-between  w-full mr-4">
-            <span className="text-sm">Subtotal:</span>
+          <div
+            className={`flex  justify-between  w-full mr-4 ${
+              locale == "ar" && "text-right flex-row-reverse"
+            }`}
+          >
+            <span className="text-sm">{cartTotal.subtotal}:</span>
             <span className="font-semibold">
               ${Math.floor(calculateSubtotal(products, 0))}
             </span>
           </div>
           <hr className="border-gray-300 w-full mr-4" />
           {/* Shipping */}
-          <div className="flex justify-between w-full mr-4">
-            <span className="text-sm">Shipping:</span>
+          <div
+            className={`flex  justify-between  w-full mr-4 ${
+              locale == "ar" && "text-right flex-row-reverse"
+            }`}
+          >
+            <span className="text-sm">{cartTotal.shipping}:</span>
             <span className="font-semibold">
               {CalcShaping(calculateSubtotal(products, 0)) === 0
                 ? "Free"
@@ -209,33 +259,38 @@ const Client = () => {
           <hr className="border-gray-300 w-full mr-4" />
           {/* Total */}
           {hasCoupon && (
-            <div className="flex  justify-between w-full mr-4">
-              <span className="text-sm">Coupon:</span>
+            <div
+              className={`flex  justify-between  w-full mr-4 ${
+                locale == "ar" && "text-right flex-row-reverse"
+              }`}
+            >
+              <span className="text-sm">{cartTotal.coupon}</span>:
               <span className="font-semibold">-50</span>
             </div>
           )}
           <hr className="border-gray-300 w-full mr-4" />
-          <div className="flex  justify-between w-full mr-4">
-            <span className="text-sm">Total:</span>
+          <div
+            className={`flex  justify-between  w-full mr-4 ${
+              locale == "ar" && "text-right flex-row-reverse"
+            }`}
+          >
+            <span className="text-sm">{cartTotal.total}</span>:
             <span className="font-semibold">
-              {hasCoupon ? (
-                <span>
-                  $
-                  {CalcTotalAfterCouponAndShiping(
-                    calculateSubtotal(products, 0),
-                    hasCoupon
-                  )}
-                </span>
-              ) : (
-                "Calculate after applying coupon"
+              $
+              {CalcTotalAfterCouponAndShiping(
+                calculateSubtotal(products, 0),
+                hasCoupon
               )}
             </span>
           </div>
           <hr className="border-gray-300 w-full mr-4" />
           {/* Checkout button */}
-          <button className="bg-blue-500 text-white px-6 py-2  my-4 rounded hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
-            Process to Checkout
-          </button>
+          <Link
+            href={"/Checkout"}
+            className="bg-blue-500 text-white px-6 py-2  my-4 rounded hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+          >
+            {buttons.process}
+          </Link>
         </div>
       </div>
       ;
