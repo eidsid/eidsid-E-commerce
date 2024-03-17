@@ -149,22 +149,20 @@
               "bank": "بنك",
               "cash": "الدفع عند التسليم"
             },
-            "coupon": {
-              "placeholder": "كود القسيمة",
-              "apply": "تطبيق القسيمة"
-            },
+        
             "order": "طلب"
           }
         },
+        "title":"السلة",
         "topLevelTexts": {
           "product": "المنتج",
           "price": "السعر",
           "quantity": "الكمية",
           "subtotal": "المجموع الفرعي"
+
         },
         "buttons": {
           "return": "العودة للتسوق",
-          "update": "تحديث السلة",
           "apply": "تطبيق القسيمة",
           "process": "الانتقال لإتمام الشراء",
           "applyPlaceholder": "كود القسيمة"
@@ -173,7 +171,8 @@
           "title": "إجمالي السلة",
           "subtotal": "المجموع الفرعي",
           "shipping": "الشحن",
-          "total": "الإجمالي"
+          "total": "الإجمالي",
+          "coupon":"قيمه الكوبون"
         }
       },
       "contact": {
@@ -234,10 +233,11 @@
       },
       "wishlist": {
         "wishlist": "قائمة الأماني",
-        "moveAllBag": "نقل الكل إلى السلة",
+        "movetoBag": "نقل إلى السلة",
         "forYou": "من أجلك",
         "seeAll": "عرض الكل"
       },
+      "removeTitle":"حذف المنتج",
       "index": {
         "sideMenu": {
           "plainMenu": [

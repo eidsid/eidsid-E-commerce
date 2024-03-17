@@ -210,13 +210,10 @@
             "bank": "bank",
             "cash": "cash on delivery"
           },
-          "coupon": {
-            "placeholder": "coupon code",
-            "apply": "apply coupon"
-          },
           "order": "place order"
         }
       },
+      "title":"Cart",
       "topLevelTexts": {
         "product": "product",
         "price": "price",
@@ -225,7 +222,6 @@
       },
       "buttons": {
         "return": "return to shop",
-        "update": "update cart",
         "apply": "apply coupon",
         "process": "process to checkout",
         "applyPlaceholder": "Coupon Code"
@@ -234,7 +230,8 @@
         "title": "cart total",
         "subtotal": "subtotal",
         "shipping": "shipping",
-        "total": "total"
+        "total": "total",
+        "coupon":"coupon value"
       }
     },
     "contact": {
@@ -293,7 +290,7 @@
     },
     "wishlist": {
       "wishlist": "Wishlist",
-      "moveAllBag": "move all to bag",
+      "movetoBag": "move  to bag",
       "forYou": "just for you",
       "seeAll": "see All"
     },
@@ -630,7 +627,9 @@
         }
       ]
     },
-    "loading": "Loading, please wait..."
+
+    "loading": "Loading, please wait...",
+    "removeTitle":"Remove Product"
   },
   "footer": {
     "footerNav": [
