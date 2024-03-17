@@ -6,6 +6,7 @@ export interface IProductCard {
   id: string;
   imgUrl: string;
   name: string;
+  description?: string;
   price: number;
   rating: number[];
   ratingAmount: number;
