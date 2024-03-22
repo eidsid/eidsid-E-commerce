@@ -118,15 +118,37 @@
         }
       },
       "account": {
-        "yourProfile": "ملفك الشخصي",
-        "name": "الاسم",
-        "password": "كلمة المرور",
+        "welcomeTitle":"!مرحباا",
+
+        "nav": [
+          { "text": "إدارة حسابي", "href": "account" },
+          { "text": "طلباتي", "href": "orders" },
+          { "text": "قائمة رغباتي", "href": "Wishlist" }
+        ],
+        "yourProfile": " تعديل ملفك الشخصي",
+        "fristName": "الاسم الأول",
+        "LastName": "الاسم الأخير",
+        "ChangePasswordTitle": "تغيير الرقم السري",
+        "currentpassword": "كلمة المرور الحالية",
+        "newpassword": "كلمة المرور الجديدة",
+        "confirempassword": "تأكيد كلمة المرور",
         "city": "المدينة",
         "streetAddress": "عنوان الشارع",
         "apartment": "الشقة",
         "companyName": "اسم الشركة",
         "email": "البريد الإلكتروني",
-        "phoneNumber": "رقم الهاتف"
+        "phoneNumber": "رقم الهاتف",
+        "savebtn": "حفظ التغييرات",
+        "Cancelbtn":"الغاء",
+        "orderSection":{
+          "order": " الطلب رقم",
+          "Date": "التاريخ",
+          "Total": "الإجمالي",
+          "DeleverAdress": "عنوان التسليم",
+          "paymentId": "رقم الدفع",  "products": "المنتجات"
+        }
+        
+
       },
       "cart": {
         "checkOut": {
@@ -238,6 +260,7 @@
         "seeAll": "عرض الكل"
       },
       "removeTitle":"حذف المنتج",
+    "addtocartTitle":"اضافه الي السلة",
       "index": {
         "sideMenu": {
           "plainMenu": [

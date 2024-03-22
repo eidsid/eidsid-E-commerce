@@ -179,15 +179,30 @@
       }
     },
     "account": {
-      "yourProfile": "Your profile",
-      "name": "name",
-      "password": "password",
+      "welcomeTitle":"Welcome!",
+      "nav":[
+        {  "text":"Manage My Account","href":"account"},
+        {  "text":"My Orders","href":"orders"},
+        {  "text":"My WishList","href":"Wishlist"}
+      ],
+      "yourProfile": "Edit Your profile",
+      "fristName": "frist Name",
+      "LastName": "Last Name",
+      "ChangePasswordTitle": "Password Change",
+      "currentpassword": "Current password",
+      "newpassword": "New password",
+      "confirempassword": "Confirem password",
       "city": "city",
       "streetAddress": "street address",
       "apartment": "apartment",
       "companyName": "company name",
       "email": "email",
-      "phoneNumber": "phone number"
+      "phoneNumber": "phone number",
+      "savebtn":"SaveChanges",
+      "Cancelbtn":"Cancel",
+      "orderSection":{
+        "order":"Order","Date":"Date","Total":"Total","DeleverAdress":"Delivery Address","paymentId":"Payment ID","products":"Products"
+      }
     },
     "cart": {
       "checkOut": {
@@ -629,7 +644,8 @@
     },
 
     "loading": "Loading, please wait...",
-    "removeTitle":"Remove Product"
+    "removeTitle":"Remove Product",
+    "addtocartTitle":"Add To Cart"
   },
   "footer": {
     "footerNav": [
