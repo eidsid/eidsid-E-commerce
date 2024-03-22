@@ -43,7 +43,9 @@ const AccountSection = ({ dictionary, locale }: props) => {
       } max-w-4xl m-auto w-full`}
     >
       <div>
-        <h2 className="m-4">{dictionary.yourProfile}</h2>
+        <h2 className=" text-center text-2xl font-bold mb-4">
+          {dictionary.yourProfile}
+        </h2>
       </div>
       <div
         className={`flex w-full   justify-between ${

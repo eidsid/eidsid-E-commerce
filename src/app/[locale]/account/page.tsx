@@ -8,7 +8,10 @@ const page = async () => {
   const Locale = getLocaleInServer(headers);
   const dectionary: any = await getDict(Locale);
   const accountDectionary = dectionary.pages.account;
-
+  const removeTitleDectionary = dectionary.pages.removeTitle;
+  accountDectionary.wishListProduct = {
+    removeTitle: removeTitleDectionary,
+  };
   return (
     <div>
       <Client dectionary={accountDectionary} locale={Locale} />

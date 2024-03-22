@@ -2,11 +2,12 @@
 import React, { useState } from "react";
 import AccountSection from "./Content/AccountSection";
 import { OrderSection } from "./Content/OrderSection";
-import WhishLidtSection from "./Content/WhishLidtSection";
 import { TLanguages } from "@/shared/types";
+import WishListSection from "./Content/WishListSection";
 
 type props = {
   dectionary: {
+    wishListProduct: { removeTitle: string; addTitle: string };
     nav: { text: string; href: string }[];
     ChangePasswordTitle: string;
     yourProfile: string;
@@ -23,12 +24,21 @@ type props = {
     phoneNumber: string;
     savebtn: string;
     Cancelbtn: string;
+    orderSection: {
+      order: string;
+      Date: string;
+      Total: string;
+      DeleverAdress: string;
+      paymentId: string;
+      products: string;
+    };
   };
   locale: TLanguages;
 };
 const Client = ({ dectionary, locale }: props) => {
   const [pageContent, setPageContent] = useState<string>("account");
-  const { nav, ...AccountSectionDectionary } = dectionary;
+  const { wishListProduct, nav, orderSection, ...AccountSectionDectionary } =
+    dectionary;
   const handelPageContent = (PageContent: string) => {
     setPageContent(PageContent);
   };
@@ -37,10 +47,10 @@ const Client = ({ dectionary, locale }: props) => {
     <div
       className={`container flex gap-8  m-auto  ${
         locale === "ar" && "text-right flex-row-reverse "
-      }   min-h-96`}
+      }   min-h-96 h-svh  relative `}
     >
       {/* nav */}
-      <div className="flex flex-col  font-bold self-center gap-4 w-1/5">
+      <div className="flex flex-col  font-bold self-center gap-4 w-1/5 h-screen justify-center nocsrolbar">
         {nav.map(({ text, href }, index) => {
           return (
             <button
@@ -55,7 +65,7 @@ const Client = ({ dectionary, locale }: props) => {
       </div>
       {/* content */}
 
-      <div className="w-4/5">
+      <div className="w-4/5 overflow-y-scroll  mt-8 nocsrolbar ">
         {pageContent === "account" && (
           <AccountSection
             dictionary={AccountSectionDectionary}
@@ -63,10 +73,18 @@ const Client = ({ dectionary, locale }: props) => {
           />
         )}
         {pageContent === "orders" && (
-          <OrderSection title={nav[1].text} locale={locale} />
+          <OrderSection
+            dectionary={orderSection}
+            title={nav[1].text}
+            locale={locale}
+          />
         )}
         {pageContent === "Wishlist" && (
-          <WhishLidtSection title={nav[2].text} locale={locale} />
+          <WishListSection
+            title={nav[2].text}
+            locale={locale}
+            dic={wishListProduct}
+          />
         )}
       </div>
     </div>

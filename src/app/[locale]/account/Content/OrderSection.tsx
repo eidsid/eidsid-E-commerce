@@ -54,13 +54,13 @@ export const OrderSection = ({ title, locale, dectionary }: props) => {
   ];
 
   return (
-    <div>
-      <div>{title}</div>
+    <div className="relative">
+      <div className="  text-center text-2xl font-bold mb-4">{title}</div>
 
-      <div className="container mx-auto py-6 flex flex-wrap gap-4 justify-center">
+      <div className="container mx-auto py-6 flex flex-wrap gap-4 justify-center relative ">
         {orders.map((order, index) => (
           <div key={index} className="bg-white shadow-md rounded-lg p-6 mb-4 ">
-            <h2 className="text-lg font-semibold mb-2">
+            <h2 className="text-lg font-semibold mb-2 ">
               {dectionary.order} {order.id}
             </h2>
             <p className="text-gray-600 mb-2">
