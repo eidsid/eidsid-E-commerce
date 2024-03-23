@@ -96,19 +96,20 @@ const intailProducts = [
     amount: 1,
   },
 ];
+type product = {
+  id: string;
+  imgUrl: string;
+  name: string;
+  description: string;
+  price: number;
+  rating: number[];
+  ratingAmount: number;
+  discount: number;
+  colors: string[];
+  amount: number;
+};
 type check_out = {
-  products: {
-    id: string;
-    imgUrl: string;
-    name: string;
-    description: string;
-    price: number;
-    rating: number[];
-    ratingAmount: number;
-    discount: number;
-    colors: string[];
-    amount: number;
-  }[];
+  products: product[];
   total: number;
 };
 const intailcheckedOutObject = {
@@ -245,7 +246,7 @@ const Client = ({ dectionary, locale }: props) => {
           <div className="w-1/2 py-5 flex flex-col">
             {/* products */}
             {checkedOutObject.products ? (
-              checkedOutObject.products.map((Product) => {
+              checkedOutObject.products.map((Product: product) => {
                 return (
                   <div className="flex justify-between" key={Product.id}>
                     <div className="col flex gap-4">
