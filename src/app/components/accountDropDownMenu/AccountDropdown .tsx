@@ -5,16 +5,17 @@ import {
   ShoppingBagIcon,
   UserIcon,
 } from "@heroicons/react/24/outline";
-import Link from "next/link";
 import { useState } from "react";
+import HeaderLink from "../header/HeaderLink";
 type props = {
   AccountTransation: {
     manageAccount: link;
     MyOrder: link;
     logout: string;
   };
+  locale: string;
 };
-const AccountDropdown = ({ AccountTransation }: props) => {
+const AccountDropdown = ({ AccountTransation, locale }: props) => {
   const [isOpen, setIsOpen] = useState(false);
   const { manageAccount, MyOrder, logout } = AccountTransation;
   const toggleDropdown = () => {
@@ -37,16 +38,15 @@ const AccountDropdown = ({ AccountTransation }: props) => {
       >
         <li className="px-4 py-2 cursor-pointer hover:bg-white hover:text-black rounded-sm flex gap-1 items-center">
           <UserIcon height={20} width={20} />
-          <Link href={manageAccount.href}>{manageAccount.text}</Link>
+
+          <HeaderLink text={manageAccount.text} href={manageAccount.href} />
         </li>
         <li className="px-4 py-2 cursor-pointer hover:bg-white hover:text-black rounded-sm flex gap-1 items-center">
           <ShoppingBagIcon height={20} width={20} />
-
-          <Link href={MyOrder.href}>{MyOrder.text}</Link>
+          <HeaderLink text={MyOrder.text} href={MyOrder.href} />
         </li>
         <li className="px-4 py-2 cursor-pointer hover:bg-white hover:text-black rounded-sm flex gap-1 items-center">
           <ArrowLeftEndOnRectangleIcon height={20} width={20} />
-
           {logout}
         </li>
       </ul>
