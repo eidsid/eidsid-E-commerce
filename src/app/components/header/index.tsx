@@ -8,6 +8,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { TLanguages, link } from "@/shared/types";
 import AccountDropdown from "../accountDropDownMenu/AccountDropdown ";
+import HeaderLink from "./HeaderLink";
 type props = {
   HeaderDectionary: {
     links: { text: string; href: string }[];
@@ -47,12 +48,7 @@ const Header = async ({ HeaderDectionary, Local }: props) => {
         <ul className="flex gap-4  ">
           {linkes.map(({ text, href }, index) => (
             <li key={index}>
-              <Link
-                href={href}
-                className="transition-all py-2 px-4   active:bg-white active:text-black rounded-2xl hover:bg-color-text-2-hover hover:text-white"
-              >
-                {text}
-              </Link>
+              <HeaderLink text={text} href={href} />
             </li>
           ))}
         </ul>
@@ -74,16 +70,27 @@ const Header = async ({ HeaderDectionary, Local }: props) => {
           </form>
           <ul className="flex gap-4">
             <li>
-              <HeartIcon height={25} width={25} className=" cursor-pointer" />
+              <Link href={`/${Local}/WishList`}>
+                <HeartIcon height={25} width={25} className=" cursor-pointer" />
+              </Link>
             </li>
             <li>
-              <ShoppingCartIcon
-                height={25}
-                width={25}
-                className=" cursor-pointer"
-              />
+              <Link href={`/${Local}/Cart`}>
+                <ShoppingCartIcon
+                  height={25}
+                  width={25}
+                  className=" cursor-pointer"
+                />
+              </Link>
             </li>
-            {login && <AccountDropdown AccountTransation={AccountTransation} />}
+            {login ? (
+              <AccountDropdown
+                AccountTransation={AccountTransation}
+                locale={Local}
+              />
+            ) : (
+              <HeaderLink text="Login" href="Account" />
+            )}
           </ul>
         </section>
       </nav>

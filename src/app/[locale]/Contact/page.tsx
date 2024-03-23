@@ -23,7 +23,7 @@ type dectionarytype = {
     send: string;
   };
 };
-const Contact = async () => {
+const Page = async () => {
   const Local = getLocaleInServer(headers);
   const dectionary: any = await getDict(Local);
   const contactDectionary: dectionarytype = dectionary.pages.contact;
@@ -121,4 +121,4 @@ const Contact = async () => {
   );
 };
 
-export default Contact;
+export default Page;
