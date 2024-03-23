@@ -3,18 +3,20 @@
      "logo":"تسوق بذكاء",
       "accountDropDown": {
       "manageAccount": {
-        "href": "acount",
+        "href": "account",
         "text": "إدارة حسابي"
       },
       "MyOrder": {
-        "href": "order",
+        "href": "account",
         "text": "طلباتي"
       },
       "logout": "تسجيل الخروج"
     },
+    "login":"تسجيل الدخول",
       "topHeader": {
         "text": "تخفيضات الصيف على جميع ملابس السباحة مع توصيل سريع مجاني - خصم 50%!",
-        "href": "تسوق الآن"
+        "href": "Products"
+
       },
       "links": [
         {
@@ -22,15 +24,15 @@
           "text": "الرئيسية"
         },
         {
-          "href": "contact",
+          "href": "Contact",
           "text": "اتصل بنا"
         },
         {
-          "href": "about",
+          "href": "About",
           "text": "حول"
         },
         {
-          "href": "sign-up",
+          "href": "SignUp",
           "text": "سجّل الآن"
         }
       ],
