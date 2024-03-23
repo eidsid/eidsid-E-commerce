@@ -620,7 +620,12 @@
             "subtitle": "نقوم بإعادة الأموال في غضون 30 يومًا",
             "image": "safety"
           }
-        ]
+        ],
+        "ordersuccess": {
+        "title": "تأكيد الطلب",
+        "description": "شكرًا لطلبك! تمت عملية الدفع بنجاح، وتم تأكيد طلبك."
+        ,"toProductsBtn": "متابعة التسوق"
+        }
       ,
         "bestSelling": {
           "title": "هذا الشهر",

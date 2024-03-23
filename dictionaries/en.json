@@ -640,7 +640,12 @@
           "subtitle": "We reurn money within 30 days",
           "image": "safety"
         }
-      ]
+      ],
+      "ordersuccess":{
+        "title":"Order Confirmation",
+        "description":"Thank you for your order! Your payment was successful, and your order has been confirmed."
+     ,"toProductsBtn":"Continue Shopping"
+      }
     },
 
     "loading": "Loading, please wait...",
