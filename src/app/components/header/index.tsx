@@ -7,7 +7,7 @@ import {
   ShoppingCartIcon,
 } from "@heroicons/react/24/outline";
 import { TLanguages, link } from "@/shared/types";
-import AccountDropdown from "../accountDropDownMenu/AccountDropdown ";
+import AccountDropdown from "../accountDropDownMenu/AccountDropdown";
 import HeaderLink from "./HeaderLink";
 type props = {
   HeaderDectionary: {
@@ -20,6 +20,7 @@ type props = {
       MyOrder: link;
       logout: string;
     };
+    login: string;
   };
   Local: TLanguages;
 };
@@ -89,7 +90,7 @@ const Header = async ({ HeaderDectionary, Local }: props) => {
                 locale={Local}
               />
             ) : (
-              <HeaderLink text="Login" href="Account" />
+              <HeaderLink text={Header.login} href="Account" />
             )}
           </ul>
         </section>
