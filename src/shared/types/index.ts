@@ -12,6 +12,7 @@ export interface IProductCard {
   ratingAmount: number;
   discount?: number;
   colors?: string[];
+  Images?: [];
 }
 
 // ! category card
