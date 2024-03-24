@@ -1,5 +1,8 @@
 import { ICartProductCard, TLanguages, TTime } from "../types";
 
+export const calcDiscount = (price: number, discount: number) =>
+  price - (discount / 100) * price;
+
 export function calculateTimeLeft(targetDate: Date): TTime {
   const currentDate = new Date();
   const timeLeft = targetDate.getTime() - currentDate.getTime();
