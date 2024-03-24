@@ -50,7 +50,7 @@ const Product = ({ favoritesIDs, product }: prop) => {
             />
           )}
         </div>
-        <Link href={`products/${id}`}>
+        <Link href={`Products/${id}`}>
           <Image
             src={gamepad.src}
             height={100}
