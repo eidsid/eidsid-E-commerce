@@ -9,6 +9,7 @@ import React from "react";
 import gamepad from "@/public/images/products/gamepad-red.webp";
 import Image from "next/image";
 import Link from "next/link";
+import { calcDiscount } from "@/shared/utils";
 
 type prop = {
   favoritesIDs: string[];
@@ -64,7 +65,7 @@ const Product = ({ favoritesIDs, product }: prop) => {
       <div className="price flex  gap-3  px-4  text-sm">
         {discount && (
           <span className="  text-red-600  font-medium">
-            ${price - (discount / 100) * price}
+            ${calcDiscount(price, discount)}
           </span>
         )}
         <span className=" line-through opacity-60">${price}</span>
