@@ -66,6 +66,7 @@
         ]
       },
       "section3": {
+        "title":"Team",
         "employeeCards": [
           {
             "href": {
@@ -73,7 +74,7 @@
               "linkedin": "#",
               "twitter": "#"
             },
-            "image": "employee-1.webp",
+            "image": "1",
             "name": "tom crouise",
             "status": "founder & chairman"
           },
@@ -83,7 +84,7 @@
               "linkedin": "#",
               "twitter": "#"
             },
-            "image": "employee-2.webp",
+            "image": "2",
             "name": "emma watson",
             "status": "managing director"
           },
@@ -93,67 +94,7 @@
               "linkedin": "#",
               "twitter": "#"
             },
-            "image": "employee-3.webp",
-            "name": "will smith",
-            "status": "product designer"
-          },
-          {
-            "href": {
-              "instagram": "#",
-              "linkedin": "#",
-              "twitter": "#"
-            },
-            "image": "employee-1.webp",
-            "name": "tom crouise",
-            "status": "founder & chairman"
-          },
-          {
-            "href": {
-              "instagram": "#",
-              "linkedin": "#",
-              "twitter": "#"
-            },
-            "image": "employee-2.webp",
-            "name": "emma watson",
-            "status": "managing director"
-          },
-          {
-            "href": {
-              "instagram": "#",
-              "linkedin": "#",
-              "twitter": "#"
-            },
-            "image": "employee-3.webp",
-            "name": "will smith",
-            "status": "product designer"
-          },
-          {
-            "href": {
-              "instagram": "#",
-              "linkedin": "#",
-              "twitter": "#"
-            },
-            "image": "employee-1.webp",
-            "name": "tom crouise",
-            "status": "founder & chairman"
-          },
-          {
-            "href": {
-              "instagram": "#",
-              "linkedin": "#",
-              "twitter": "#"
-            },
-            "image": "employee-2.webp",
-            "name": "emma watson",
-            "status": "managing director"
-          },
-          {
-            "href": {
-              "instagram": "#",
-              "linkedin": "#",
-              "twitter": "#"
-            },
-            "image": "employee-3.webp",
+            "image": "3",
             "name": "will smith",
             "status": "product designer"
           }

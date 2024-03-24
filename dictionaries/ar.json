@@ -66,6 +66,8 @@
           ]
         },
         "section3": {
+        "title":"الفريق",
+
           "employeeCards": [
             {
               "href": {
@@ -73,7 +75,7 @@
                 "linkedin": "#",
                 "twitter": "#"
               },
-              "image": "employee-1.webp",
+              "image": "1",
               "name": "توم كروز",
               "status": "مؤسس ورئيس"
             },
@@ -83,7 +85,7 @@
                 "linkedin": "#",
                 "twitter": "#"
               },
-              "image": "employee-2.webp",
+              "image": "2",
               "name": "إيما واتسون",
               "status": "المدير التنفيذي"
             },
@@ -93,7 +95,7 @@
                 "linkedin": "#",
                 "twitter": "#"
               },
-              "image": "employee-3.webp",
+              "image": "3",
               "name": "ويل سميث",
               "status": "مصمم المنتج"
             }
@@ -104,17 +106,17 @@
             {
               "title": "توصيل سريع ومجاني",
               "subtitle": "توصيل مجاني لجميع الطلبات التي تزيد قيمتها عن 140 دولارًا",
-              "image": "delivery.svg"
+              "image": "delivery"
             },
             {
               "title": "خدمة عملاء على مدار الساعة",
               "subtitle": "دعم ودية على مدار الساعة طوال أيام الأسبوع",
-              "image": "support.svg"
+              "image": "support"
             },
             {
               "title": "ضمان استرداد الأموال",
               "subtitle": "نقوم بإرجاع الأموال في غضون 30 يومًا",
-              "image": "safety.svg"
+              "image": "safety"
             }
           ]
         }
