@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
 import aboutImage from "@/public/images/about/employee-1.webp";
 import { getDict } from "../../../../dictionaries/dictionaries";
@@ -49,16 +49,21 @@ const page = async () => {
   const Local = getLocaleInServer(headers);
   const dectionary: any = await getDict(Local);
   const aboutDectionary = dectionary.pages.aboutUs;
-  const employessImges = {
+
+  type EmployeeKey = "1" | "2" | "3";
+  const employessImges: Record<EmployeeKey, StaticImageData> = {
     "1": employee1Image,
     "2": employee2Image,
     "3": employee3Image,
   };
-  const ServicesIcons = {
+  type ServiceKey = "delivery" | "support" | "safety";
+
+  const ServicesIcons: Record<ServiceKey, StaticImageData> = {
     delivery: DeliveryIcon,
     support: saftyIcon,
     safety: supportIcon,
   };
+
   const {
     section1,
     section2: { aboutCards },
@@ -106,14 +111,14 @@ const page = async () => {
           {section3.title}
         </h2>
         <div className="flex  justify-center">
-          {section3.employeeCards.map((employee) => (
+          {section3.employeeCards.map((employee, index) => (
             <div
               key={employee.name}
               className="card  h-96 w-60  bg-white rounded-lg shadow-md p-4"
             >
               <div className="bg-slate-200 h-60 relative overflow-hidden rounded-t-lg">
                 <Image
-                  src={employessImges[employee.image]}
+                  src={employessImges[employee.image as EmployeeKey]}
                   alt={`employee ${employee.name} image`}
                   fill
                   className=" hover:scale-125"
@@ -160,7 +165,7 @@ const page = async () => {
           return (
             <div key={title} className="p-4 flex flex-col  items-center gap-2">
               <Image
-                src={ServicesIcons[image].src}
+                src={ServicesIcons[image as ServiceKey]}
                 height={60}
                 width={60}
                 alt={`${image} icon `}
