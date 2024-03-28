@@ -56,8 +56,8 @@ const page = async () => {
     "2": employee2Image,
     "3": employee3Image,
   };
-  type ServiceKey = "delivery" | "support" | "safety";
 
+  type ServiceKey = "delivery" | "support" | "safety";
   const ServicesIcons: Record<ServiceKey, StaticImageData> = {
     delivery: DeliveryIcon,
     support: saftyIcon,
